@@ -1,45 +1,71 @@
-/* src/styles/landing-page.css */
-
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Calibre', sans-serif;
-    background-color: #2e2e2e; /* Blackish grey */
-    color: #ffffff; /* White text */
-  }
-  
-  .landing-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .hero-section h1 {
-    font-size: 3rem;
-    margin: 0;
-    z-index: 2;
-  }
-  
-  .hero-section p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    z-index: 2;
-  }
-  
-  .blob {
-    position: absolute;
-    width: 300px; /* Increase size of the blob */
-    height: 300px;
-    background: radial-gradient(circle, rgba(255, 0, 150, 0.2), rgba(0, 204, 255, 0.2));
-    border-radius: 50%;
-    filter: blur(120px); /* Increase blur for smoother blending */
-    pointer-events: none;
-    transition: transform 0.1s ease, background 0.1s ease;
-    opacity: 0.5; /* Add transparency */
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Calibre', sans-serif;
+  background-color: #2e2e2e; /* Blackish grey */
+  color: #ffffff; /* White text */
+}
+
+.landing-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.blob {
+  position: absolute;
+  width: 350px; /* Increase size for better visibility */
+  height: 350px;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+  border-radius: 50%;
+  filter: blur(150px); /* Smooth out the blur for a more fluid appearance */
+  pointer-events: none;
+  transition: transform 0.1s ease, background 0.1s ease;
+  opacity: 0.6; /* Increase transparency for a subtle effect */
+  mix-blend-mode: screen; /* Use screen blend mode for a lighter effect */
+}
+
+/* src/styles/floating-nav.css */
+
+.floating-nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  background: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it floats above other content */
+  width: auto; /* Adjust width to content */
+}
+
+.floating-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+.floating-nav li {
+  margin: 0 15px; /* Space between items */
+}
+
+.floating-nav a {
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  font-family: 'Calibre', sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.floating-nav a:hover {
+  color: #00bcd4; /* Change color on hover */
+}
+
+.floating-nav a.active {
+  color: #00bcd4; /* Change this to your desired active color */
+  font-weight: bold;
+}
+
