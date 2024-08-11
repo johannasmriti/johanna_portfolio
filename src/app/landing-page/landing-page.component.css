@@ -25,19 +25,19 @@ body {
   mix-blend-mode: screen; /* Use screen blend mode for a lighter effect */
 }
 
-/* src/styles/floating-nav.css */
-
 .floating-nav {
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  background: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+  transform: translateX(-50%); 
+  background: #222326; 
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Ensure it floats above other content */
-  width: auto; /* Adjust width to content */
+  z-index: 1000; 
+  padding:2% 2% 2% 2%;
+  margin-top:2%;
+  width: auto; 
 }
 
 .floating-nav ul {
@@ -61,11 +61,11 @@ body {
 }
 
 .floating-nav a:hover {
-  color: #00bcd4; /* Change color on hover */
+  color: #d66eff; /* Change color on hover */
 }
 
 .floating-nav a.active {
-  color: #00bcd4; /* Change this to your desired active color */
+  color: #FF6EC7; /* Change this to your desired active color */
   font-weight: bold;
 }
 
