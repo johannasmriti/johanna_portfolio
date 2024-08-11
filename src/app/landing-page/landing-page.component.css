@@ -1,0 +1,45 @@
+/* src/styles/landing-page.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Calibre', sans-serif;
+    background-color: #2e2e2e; /* Blackish grey */
+    color: #ffffff; /* White text */
+  }
+  
+  .landing-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin: 0;
+    z-index: 2;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    z-index: 2;
+  }
+  
+  .blob {
+    position: absolute;
+    width: 300px; /* Increase size of the blob */
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.2), rgba(0, 204, 255, 0.2));
+    border-radius: 50%;
+    filter: blur(120px); /* Increase blur for smoother blending */
+    pointer-events: none;
+    transition: transform 0.1s ease, background 0.1s ease;
+    opacity: 0.5; /* Add transparency */
+  }
+  
