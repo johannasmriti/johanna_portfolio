@@ -1,9 +1,10 @@
 import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
+import { AboutSectionComponent } from '../about-section/about-section.component';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [],
+  imports: [AboutSectionComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })
@@ -20,7 +21,7 @@ export class LandingPageComponent implements OnInit {
 
   @HostListener('mousemove', ['$event'])
   onMouseMove(event: MouseEvent): void {
-    const { clientX: x, clientY: y } = event;
+    const { pageX: x, pageY: y } = event; // Use pageX and pageY for the full page position
     if (this.blob) {
       this.renderer.setStyle(this.blob, 'left', `${x - (this.blob.offsetWidth / 2)}px`);
       this.renderer.setStyle(this.blob, 'top', `${y - (this.blob.offsetHeight / 2)}px`);
