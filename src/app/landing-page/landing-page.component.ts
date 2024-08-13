@@ -17,6 +17,12 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
     this.blob = this.elRef.nativeElement.querySelector('.blob');
     this.navLinks = this.elRef.nativeElement.querySelectorAll('.floating-nav a');
+
+    // Set the "About" link as active by default
+    const aboutLink = this.elRef.nativeElement.querySelector('.floating-nav a[href="#about"]');
+    if (aboutLink) {
+      this.renderer.addClass(aboutLink, 'active');
+    }
   }
 
   @HostListener('mousemove', ['$event'])
