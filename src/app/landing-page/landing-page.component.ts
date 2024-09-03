@@ -1,10 +1,11 @@
 import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { AboutSectionComponent } from '../about-section/about-section.component';
+import { ExperienceComponent } from '../experience/experience.component';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [AboutSectionComponent],
+  imports: [AboutSectionComponent, ExperienceComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })

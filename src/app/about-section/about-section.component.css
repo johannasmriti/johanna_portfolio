@@ -1,3 +1,50 @@
-.about-container{
-    padding:10%;
-}
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 200px;
+    font-family: 'Calibre', sans-serif;
+  }
+  
+  .about-me-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #e1dcdf;
+    margin-bottom: 20px;
+  }
+
+  .section-subheading {
+    font-size: 1rem;
+    color: #e682f3;
+    margin-bottom: 20px;
+  }
+  
+  .about-me-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #d5c5d0;
+    margin-bottom: 15px;
+  }
+  
+  .about-me-image {
+    flex: 0.5;
+    text-align: center;
+  }
+  
+  .about-me-image img {
+    max-width: 100%;
+    border-radius: 50% ; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .highlight {
+    color: #ff69b4; /* Pink color */
+    font-weight: bold; /* Optional: Makes the text bold */
+  }
+  
