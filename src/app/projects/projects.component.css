@@ -1,0 +1,77 @@
+.projects {
+    padding: 9rem 0;
+    position: relative;
+    text-align: center;
+}
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: 700;
+    color: #e1dcdf;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #e682f3;
+    margin-top: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    margin-left: 1rem;
+}
+
+.construction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.worker-image {
+    width: 600px; /* Increased image size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+    animation: bounce 1.5s infinite; /* Bounce animation for the image */
+}
+.funny-message {
+    font-size: 1.8rem; /* Increased font size for better readability */
+    color: white; /* Improved readability */
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    animation: quirkyText 3s ease-out; /* Quirky animation for the text, runs only once */
+    line-height: 1.4;
+}
+
+@keyframes quirkyText {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    25% {
+        transform: rotate(-10deg);
+        opacity: 0.8;
+    }
+    50% {
+        transform: rotate(10deg);
+        opacity: 0.6;
+    }
+    75% {
+        transform: rotate(-10deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}

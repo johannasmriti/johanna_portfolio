@@ -1,0 +1,71 @@
+/* Expertise Section */
+.expertise-section {
+    padding: 5rem 4rem;
+    /* background-color: #f5f5f5; */
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #e1dcdf;
+    position: relative;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #e682f3;
+    margin-top: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    margin-left: 1rem;
+  }
+  
+  /* Expertise Grid */
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Expertise Widget */
+  .expertise-widget {
+    background-color: #444444;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    color: #ff69b4;
+  }
+  
+  .expertise-widget h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ff69b4;
+  }
+  
+  /* Hover Effect for Expertise Widget */
+  .expertise-widget:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #e682f3;
+    color: #fff;
+  }
+  
+  /* Hover Effect for Text Color Change */
+  .expertise-widget:hover h3 {
+    color: #fff;
+  }
+  
