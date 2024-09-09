@@ -33,54 +33,54 @@
 .experience-item-wrapper {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 3rem; /* Increase margin for better spacing */
+  margin-bottom: 3rem; 
   position: relative;
-  width: 100%; /* Ensure wrapper takes full width */
+  width: 100%; 
 }
 
 .date-container {
   display: flex;
-  flex-direction: column; /* Stack date and timeline vertically */
-  align-items: flex-end; /* Align items to the right */
-  width: 30%; /* Occupy 50% of the width */
-  padding-right: 2rem; /* Space between date and item */
+  flex-direction: column; 
+  align-items: flex-end; 
+  width: 30%; 
+  padding-right: 2rem; 
   padding-top:2rem;
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  box-sizing: border-box; 
 }
 
 .date {
   font-size: 1.2rem;
   color: #FF6EC7;
-  text-align: right; /* Align text to the right */
-  margin-bottom: 1rem; /* Space between date and timeline */
+  text-align: right; 
+  margin-bottom: 1rem; 
   /* padding: 30px; */
 }
 
 .timeline {
-  width: 2px; /* Narrower timeline indicator */
+  width: 2px; 
   height: 100%;
   background: #e682f3;
-  border-radius: 2px; /* Rounded edges for timeline */
+  border-radius: 2px; 
 }
 
 .experience-item {
   flex: 1;
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  background: transparent; /* Remove background color by default */
+  flex-direction: column; 
+  background: transparent; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   color: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   margin-right: 200px; 
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  box-sizing: border-box; 
 }
 
 .experience-item:hover {
-  transform: translateY(-10px); /* Lift the item on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-  background-color: #444444; /* Background color on hover */
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  background-color: #444444; 
 }
 
 .experience-item-content {
@@ -96,28 +96,27 @@
 }
 
 .experience-item-content h4 {
-  font-size: 1rem; /* Smaller font size */
+  font-size: 1rem; 
   margin-top: 0.5rem;
   color: #e682f3;
   /* margin:0; */
 }
 
 .experience-item-content .description {
-  font-size: 0.9rem; /* Smaller font size */
+  font-size: 0.9rem; 
   line-height: 1.4;
   color: #dddddd;
 }
 
-/* New styles for skill widgets */
 .skill-widgets {
   display: flex;
-  flex-wrap: wrap; /* Allow widgets to wrap to the next line */
-  gap: 1rem; /* Space between widgets */
+  flex-wrap: wrap; 
+  gap: 1rem; 
   margin-top: 1.5rem;
 }
 
 .skill-widget {
-  background: #FF6EC7; /* Background color for widgets */
+  background: #FF6EC7;
   border-radius: 8px;
   padding: 0.5rem 1rem;
   color: #ffffff;
@@ -127,5 +126,5 @@
 }
 
 .skill-widget:hover {
-  background-color: #444444; /* Darker background color on hover */
+  background-color: #444444;
 }

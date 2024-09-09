@@ -46,7 +46,7 @@
   
   .right-date {
     order: 2;
-    margin-left: 10px; /* Reduced margin to bring closer to the line */
+    margin-left: 10px; 
   }
   
   .timeline-content {

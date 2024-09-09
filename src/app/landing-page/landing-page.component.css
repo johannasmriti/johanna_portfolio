@@ -3,8 +3,8 @@ body {
   padding: 0;
   height:100vh;
   font-family: 'Calibre', sans-serif;
-  background-color: #2e2e2e; /* Blackish grey */
-  color: #ffffff; /* White text */
+  background-color: #2e2e2e; 
+  color: #ffffff; 
 }
 
 .landing-container {
@@ -15,15 +15,15 @@ body {
 
 .blob {
   position: absolute;
-  width: 350px; /* Increase size for better visibility */
+  width: 350px; 
   height: 350px;
   background: radial-gradient(circle at 50% 50%, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
   border-radius: 50%;
-  filter: blur(150px); /* Smooth out the blur for a more fluid appearance */
+  filter: blur(150px); 
   pointer-events: none;
   transition: transform 0.1s ease, background 0.1s ease;
-  opacity: 0.6; /* Increase transparency for a subtle effect */
-  mix-blend-mode: screen; /* Use screen blend mode for a lighter effect */
+  opacity: 0.6; 
+  mix-blend-mode: screen; 
 }
 
 .floating-nav {
