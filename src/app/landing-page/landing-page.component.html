@@ -1,8 +1,42 @@
-<!-- src/app/landing-page/landing-page.component.html -->
+
 <div class="landing-container">
-    <div class="hero-section">
-      
-    </div>
-    <div class="blob"></div>
+  <nav class="floating-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div>
+  <section id="about">
+    <app-about-section></app-about-section>
+  </section>
+  
+  <section id="experience">
+    <app-experience></app-experience>
+  </section>
+  
+  <section id="education">
+    <app-education></app-education>
+  </section>
+  
+  <section id="projects">
+    <app-projects></app-projects>
+  </section>
+  
+  <section id="expertise">
+    <app-expertise></app-expertise>
+  </section>
+  
+  <section id="contact">
+    <app-contact></app-contact>
+  </section>
   </div>
+  <app-footer></app-footer>
+  <div class="blob"></div>
+</div>
   

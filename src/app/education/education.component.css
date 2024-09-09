@@ -1,0 +1,147 @@
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    position: relative;
+    padding: 1rem 0;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    width: 4px;
+    /* margin-top:30px; */
+    background-color: #FF6EC7;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+  .timeline-date {
+    width: 350px;
+    /* text-align: center; */
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e1dcdf;
+  }
+  
+  .left-date {
+    /* order: 1; */
+    /* margin-right: 10px; */
+    text-align: right; 
+  }
+  
+  .right-date {
+    order: 2;
+    margin-left: 10px; 
+  }
+  
+  .timeline-content {
+    background-color: #444444;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 300px;
+    /* margin-top: 30px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .left-content {
+    order: 1;
+    margin-right: 50px;
+  }
+  
+  .right-content {
+    order: 2;
+    margin-left: 50px;
+  }
+  
+  .timeline-content h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #e1dcdf;
+  }
+  
+  .timeline-content h2 {
+    color: #ff69b4;
+  }
+  
+  .timeline-content h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #e682f3;
+  }
+  
+  .timeline-content .description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .timeline-item:hover .timeline-content {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #FF6EC7;
+    border-radius: 50%;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .timeline-item:nth-child(even)::before {
+    background-color: #FF6EC7;
+  }
+  
+  .title {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: 700;
+    color: #e1dcdf;
+    position: relative;
+  }
+  
+  .title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #e682f3;
+    margin-top: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    margin-left: 1rem;
+  }
+  
+  .education {
+    padding: 9rem 0;
+    position: relative;
+    /* margin-top: 9rem; */
+  }
+  
