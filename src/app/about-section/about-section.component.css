@@ -48,3 +48,39 @@
     font-weight: bold; 
   }
   
+  .download-resume-button {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #e682f3; 
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff69b4;
+  }
+  
+  @media (max-width: 768px) {
+    .about-me-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-me-content {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .about-me-image img {
+      max-width: 150px;
+    }
+  }
