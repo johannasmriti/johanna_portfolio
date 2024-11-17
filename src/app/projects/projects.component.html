@@ -1,7 +1,90 @@
-<div class="projects">
-    <h2 class="title">Projects</h2>
-    <div class="construction">
-        <img src="assets/construction.png" alt="Worker with Laptop" class="worker-image">
-        <p class="message">🚧 🛠️ This section is under construction. Stay tuned for amazing projects coming soon! 🛠️ 🚧</p>
+<!-- <div class="projects">
+  <h2 class="title">Projects</h2>
+  <div class="project-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="project-thumbnail">
+        <img
+          [src]="project.thumbnail"
+          alt="{{ project.title }} Thumbnail"
+          class="thumbnail-image"
+        />
+        <div class="project-overlay">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.skills }}</p>
+        </div>
+      </div>
+      <div class="project-details">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <p><strong>Duration:</strong> {{ project.duration }}</p>
+        <a [href]="project.link" target="_blank" class="view-project">
+          View Project
+        </a>
+      </div>
     </div>
+  </div>
+</div> -->
+
+<!-- <div class="projects">
+  <h2 class="title">Projects</h2>
+  <div class="project-grid">
+    <div
+      class="project-card"
+      *ngFor="let project of projects"
+      (click)="expandCard(project)"
+    >
+      <div class="project-thumbnail">
+        <img [src]="project.thumbnail" alt="{{ project.title }} Thumbnail" />
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="selectedProject"
+    class="project-expanded"
+    (click)="collapseCard()"
+  >
+    <h3>{{ selectedProject.title }}</h3>
+    <p>{{ selectedProject.description }}</p>
+    <p><strong>Duration:</strong> {{ selectedProject.duration }}</p>
+    <a [href]="selectedProject.link" target="_blank" class="view-project">
+      View Project
+    </a>
+  </div>
+</div> -->
+
+<div class="projects">
+  <h2 class="title">Projects</h2>
+  <div class="project-grid">
+    <div
+      class="project-card"
+      *ngFor="let project of projects"
+      (mouseover)="expandCard(project)"
+      (mouseleave)="collapseCard()"
+    >
+      <div class="project-thumbnail">
+        <img [src]="project.thumbnail" alt="{{ project.title }}" />
+      </div>
+      <div class="project-overlay">
+        <h3>{{ project.title }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="selectedProject"
+    class="project-expanded"
+    [style.display]="selectedProject ? 'block' : 'none'"
+  >
+    <h3>{{ selectedProject.title }}</h3>
+    <p>{{ selectedProject.description }}</p>
+
+    <h4>
+      <strong>{{ selectedProject.skills }}</strong>
+    </h4>
+    <!-- <a class="view-project" [href]="selectedProject.link" target="_blank"
+      >View Project</a
+    > -->
+    <!-- <p><strong>Duration:</strong> {{ selectedProject.duration }}</p> -->
+  </div>
 </div>
