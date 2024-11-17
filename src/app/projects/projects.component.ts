@@ -17,8 +17,8 @@ export class ProjectsComponent {
         'Portfolio App is an Angular-based application I developed to showcase my skills, projects, and experience. The app features an interactive and responsive design, highlighting my work in web development, programming, and internships. It serves as a professional platform for potential employers and collaborators to learn about my background and expertise, demonstrating my proficiency in Angular and front-end development.',
       skills: 'Angular',
       link: 'https://johannasmriti.github.io/johanna_portfolio/',
-      thumbnail: '/assets/portfolio-full.png',
-      image: '/assets/portfolio-full.png',
+      thumbnail: 'assets/portfolio-full.png',
+      image: 'assets/portfolio-full.png',
     },
     {
       title: 'Plant Management App',
