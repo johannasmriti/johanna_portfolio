@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  height:100vh;
-  font-family: 'Calibre', sans-serif;
-  background-color: #2e2e2e; 
-  color: #ffffff; 
+  height: 100vh;
+  font-family: "Calibre", sans-serif;
+  background-color: #2e2e2e;
+  color: #2e2e2e;
 }
 
 .landing-container {
@@ -15,30 +15,34 @@ body {
 
 .blob {
   position: absolute;
-  width: 350px; 
+  width: 350px;
   height: 350px;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 0, 150, 0.8),
+    rgba(0, 204, 255, 0.8)
+  );
   border-radius: 50%;
-  filter: blur(150px); 
+  filter: blur(150px);
   pointer-events: none;
   transition: transform 0.1s ease, background 0.1s ease;
-  opacity: 0.6; 
-  mix-blend-mode: screen; 
+  opacity: 0.6;
+  mix-blend-mode: screen;
 }
 
 .floating-nav {
   position: fixed;
   top: 0;
   left: 50%;
-  transform: translateX(-50%); 
-  background: #222326; 
+  transform: translateX(-50%);
+  background: #ffe3eb;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1000; 
-  padding:2% 2% 2% 2%;
-  margin-top:2%;
-  width: auto; 
+  z-index: 1000;
+  padding: 2% 2% 2% 2%;
+  margin-top: 2%;
+  width: auto;
 }
 
 .floating-nav ul {
@@ -46,26 +50,26 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .floating-nav li {
-  margin: 0 15px; 
+  margin: 0 15px;
 }
 
 .floating-nav a {
-  color: #ffffff; 
+  color: #2e2e2e;
   text-decoration: none;
-  font-family: 'Calibre', sans-serif;
+  font-family: "Calibre", sans-serif;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .floating-nav a:hover {
-  color: #d382f3; 
+  color: #b5d6d6;
 }
 
 .floating-nav a.active {
-  color: #FF6EC7; 
+  color: #989193;
   font-weight: bold;
 }
